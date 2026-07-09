@@ -87,52 +87,52 @@ export default function Home() {
             className="w-full h-full object-cover scale-110"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-950/95 via-green-900/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-green-950/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-green-950/90 via-green-900/80 to-green-950/95 md:bg-gradient-to-r md:from-green-950/95 md:via-green-900/80 md:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-green-950/70 via-transparent to-transparent" />
         </div>
 
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-amber-500" />
 
-        <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-28 sm:pt-32 pb-16 sm:pb-20 w-full">
           <div className="max-w-3xl">
-            <div className="section-tag mb-5 animate-fade-in">
+            <div className="section-tag mb-4 sm:mb-5 animate-fade-in">
               <span className="w-8 h-px bg-amber-500" />
               Indigenous Oil Servicing Company · RC: 618843
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 animate-fade-in animation-delay-200">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 sm:mb-6 animate-fade-in animation-delay-200">
               Delivering Excellence{' '}
               <span className="text-gold-gradient">Across Nigeria's</span>{' '}
               Energy Sector
             </h1>
 
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl animate-fade-in animation-delay-300">
+            <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-10 max-w-2xl animate-fade-in animation-delay-300">
               Smithers Limited provides safe, efficient, and high-quality oilfield services,
               construction solutions, and marine logistics — fully compliant with NUPRC
               regulations and internationally accepted HSE standards.
             </p>
 
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-              <Link to="/services" className="btn-primary">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-fade-in animation-delay-400">
+              <Link to="/services" className="btn-primary w-full sm:w-auto justify-center">
                 Explore Our Services <ArrowRight size={16} />
               </Link>
-              <Link to="/contact" className="btn-outline">
+              <Link to="/contact" className="btn-outline w-full sm:w-auto justify-center">
                 Get In Touch
               </Link>
             </div>
 
-            <div className="flex flex-wrap items-center gap-6 mt-12 animate-fade-in animation-delay-500">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-3 sm:gap-6 mt-8 sm:mt-12 animate-fade-in animation-delay-500">
               {['NUPRC Compliant', 'ISO 9001:2015 Certified', 'BPP Registered Contractor', 'SCUML Compliant'].map((badge) => (
                 <div key={badge} className="flex items-center gap-2">
-                  <CheckCircle size={16} className="text-amber-400" />
-                  <span className="text-gray-300 text-sm font-medium">{badge}</span>
+                  <CheckCircle size={14} className="text-amber-400 shrink-0" />
+                  <span className="text-gray-300 text-xs sm:text-sm font-medium">{badge}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in animation-delay-600">
+        <div className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 animate-fade-in animation-delay-600">
           <span className="text-gray-400 text-xs tracking-widest uppercase">Scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-amber-500 to-transparent" />
         </div>
